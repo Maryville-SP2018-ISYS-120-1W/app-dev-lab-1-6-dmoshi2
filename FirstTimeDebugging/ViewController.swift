@@ -1,9 +1,17 @@
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController{
 
-    override func viewDidLoad( {
+    override func viewDidLoad() {
+        
+    }
         super.viewDidLoad()
+    navigationController.titile = "Debugging"
+    var names = ["Tammy" , "Cole"]
+    names.removeFirst()
+    names.removeFirst()
+    names.removeFirst()
+    
         // Do any additional setup after loading the view, typically from a nib.
         var sample = "sample"
         print(sample)
@@ -14,7 +22,7 @@ class ViewController: UIViewController {
         }
         
         
-    }
+        }
     
     func someMethod() {
 
@@ -24,7 +32,6 @@ class ViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
 
 }
 
